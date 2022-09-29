@@ -1,0 +1,24 @@
+
+// --- type $8006 defines
+
+#define PSTR_00000011 $00000011
+#define PSTR_00000012 $00000012
+#define PSTR_00000013 $00000013
+#define PSTR_00000014 $00000014
+#define PSTR_00000015 $00000015
+
+// --- type $8029 defines
+
+#define R8029_00000001 $00000001
+
+// --- type $802A defines
+
+#define R802A_00000001 $00000001
+
+// --- type $DEAD defines
+
+#define RDEAD_00000001 $00000001
+
+
+
+

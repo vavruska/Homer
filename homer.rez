@@ -1,0 +1,69 @@
+// --------------------------------------------------------------------
+// Genesys created REZ data code
+// Simple Software Systems International, Inc.
+// APWREZ.SCG 1.2
+// --------------------------------------------------------------------
+
+#include "types.rez"
+#include "homer.equ"
+
+#define COPY_YEAR "2022"
+#define rUpdateInfo $DEAD
+
+type rUpdateInfo {
+ integer = 0; /* version must be zero */
+ longint; /* Resource ID of string holding app's display name */
+ longint; /* ID of string holding author's name */
+ longint; /* ID of string URL to the downloads folder */
+ longint; /* ID of string for downloadable archive name */
+ longint; /* ID of string for Versions.List data file */
+};
+
+
+resource rPString (PSTR_00000011, $0000) {
+       "Homer"
+};
+
+resource rPString (PSTR_00000012, $0000) {
+       "Chris Vavruska"
+};
+
+resource rPString (PSTR_00000013, $0000) {
+       "http://vavruska.com/a2/"
+};
+
+resource rPString (PSTR_00000014, $0000) {
+       "HomerV10.shk"
+};
+
+resource rPString (PSTR_00000015, $0000) {
+       "vavruska"
+};
+
+resource rComment (R802A_00000001, $0000) {
+	"      _____\t\tHomer 1.0\n"
+	"     /         \\\tCopyright \0xa9 "COPY_YEAR" Chris Vavruska\n"  
+	" \\/\\\/        |\n"
+	"   |  (o)(o) \tA finder extension to open the\n"
+	"   C   .---_)\thome location of items on the \n"
+	"   |  |.___|\tdesktop or from the inside of\n"
+	"   |   \\__/\t\tEasyMount documents.\n"
+	"   /_____\\\n"
+	" /_____/  \\\n"
+};
+
+resource rVersion (R8029_00000001, $0000) {
+        {1, 0, 0, release, 0},
+        VerUS,
+        "Homer",
+        "Copyright \0xa9 "COPY_YEAR" Chris Vavruska"
+};
+
+resource rUpdateInfo(RDEAD_00000001, $000) {
+    PSTR_00000011,
+    PSTR_00000012,
+    PSTR_00000013,
+    PSTR_00000014,
+    PSTR_00000015
+};
+
