@@ -285,7 +285,6 @@ word doExtras(long menuId) {
 
 void scanIcons(void) {
     tellFinderGetSelectedIconsOut dataOut;
-    tellFinderGetWindowInfoOut wInfo = {0};
     StringList *iconList;
     bool enabled = false;
 
