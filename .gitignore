@@ -11,3 +11,5 @@ Kangaroo.Data
 *.root
 *.sym
 ._*
+*.xcodeproj
+.DS_Store
